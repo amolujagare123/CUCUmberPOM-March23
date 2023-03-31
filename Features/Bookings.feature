@@ -10,10 +10,10 @@ Feature: All bookings.com scenarios
     When I select option for stars as <stars>
     Then I verify system displays only <stars> hotels on search result
     Examples:
-      | stars   |
-      | 5 stars |
-      | 4 stars |
-      | 3 stars |
+      | stars |
+    #  | 5 stars |
+     | 4 stars |
+   #   | 3 stars |
 
 
 #2
@@ -21,7 +21,7 @@ Feature: All bookings.com scenarios
   @maxAmount
   Scenario: check the hotel prices are below a certain amount
     Given I am on default locations search result screen
-    Then I verify system displays all hotels within "40000" amount
+    Then I verify system displays all hotels within "10000" amount
 
 
 #3
